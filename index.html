@@ -9,39 +9,20 @@
 	<link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/76bee23445.js" crossorigin="anonymous"></script>
 	<style type="text/css">
-		/* Custom styles for responsiveness and layout */
-
-		/* Add padding to body to prevent content from being hidden by fixed navbar */
 		body {
-			padding-top: 70px; /* Adjust this value based on your navbar height */
+			padding-top: 70px;
 			background-color: #cce4ff;
 		}
 
 		.navbar-right {
-			/* Use Bootstrap's flexbox utilities instead of float */
-			/* float: right; */
 			padding-right: 15px;
 		}
 
-		/* Adjust navbar brand margin for smaller screens */
 		.navbar-brand {
-		  	margin-left:  15px; /* Default margin for smaller screens */
+		  	margin-left:  15px;
 		}
 
-
-		/* Media queries for larger screens */
-		@media (min-width: 768px) { /* Adjust breakpoint as needed */
-			/* Use Bootstrap's flexbox utilities for alignment */
-			.flexible-nav {
-				/* flex-direction: row; */ /* Bootstrap handles this */
-				/* align-items: center; */ /* Bootstrap handles this */
-			}
-
-			.navbar-right {
-				/* flex-direction: row; */ /* Bootstrap handles this */
-				/* align-items: center; */ /* Bootstrap handles this */
-			}
-
+		@media (min-width: 768px) {
 			.icon-left {
 			  	margin-right:  30px;
 			}
@@ -51,7 +32,7 @@
 			}
 
 			.navbar-brand {
-			  	margin-left:  5%; /* Larger margin for larger screens */
+			  	margin-left:  5%;
 			}
 
 			.center-block {
@@ -61,7 +42,6 @@
 			}
 		}
 
-		/* Timeline styles */
 		.timeline .timeline-item:after {
 		  background-color: #602c0b;
 		  left: -38px;
@@ -84,7 +64,6 @@
 		  position: relative;
 		}
 
-		/* Text color styles */
 		p {
 			color: #485567;
 		}
@@ -95,6 +74,15 @@
 
 		h3 {
 			color: #485567;
+		}
+
+		a {
+			color: #323a45;
+		}
+
+		.greylist {
+			color: #485567;
+			padding-left: 2rem;
 		}
 	</style>
 </head>
@@ -118,9 +106,9 @@
 						<img src="img/profile.jpeg" style="width: 80%; padding-top: 3%;" class="center-block img-fluid">
 					</div>
 					<div class="col-md-6">
-						<p>I enjoy working on interesting applications of mathematics that have potential to be very impactful and I am currently doing so as a Research Engineer at Google DeepMind.</p>
-						<p>In my teenage years, I learned about artificial intelligence, theoretical computer science and mathematics through online university courses (Coursera, edX, etc.). Doing this opened up a lot of opportunities to me, such as gaining work experience in tech companies during high school and coming to the University of Oxford to study a BA in Mathematics and Computer Science (2020-23) with a full scholarship for a academic achievement.</p>
-						<p>Here you can find a summary of the things I have worked on, which I'll hopefully keep up to date :)</p>
+						<p>I am a research engineer at Google DeepMind, where I work on language models. I joined GDM in the Summer of 2023, after finishing an undergrad in Mathematics and Computer Science in the University of Oxford.</p>
+						<p>Here you can find a summary of the things I have done, which I'll hopefully keep up to date :)</p>
+						<p>These include co-funding and running a non-profit for four years, designing and preparing problems for several informatics olympiads, and work experience during high school in applied AI.</p>
 					</div>
 				</div>
 				<div class="row" style="padding-top: 30px;">
@@ -149,14 +137,14 @@
 							<li>
 								<h6>María Cristina Masaveu Peterson Scholarship for Academic Excellence (full scholarship for the duration of my studies: 2020-23)</h6>
 								<p>Issued the María Cristina Masaveu Peterson Foundation</p> </li>
-						</ul>
-					</div>
-					<div class="col-md-6">
-						<ul class="list-unstyled">
 							<li>
 								<h6>Silver Medal, Iberoamerican Informatics Olympiad 2020</h6>
 								<p>Issued by the Iberoamerican Informatics Olympiad (OII, previously CIIC)</p> </li>
 							<li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<ul class="list-unstyled">
 								<h6>Gold Medal, Spanish Informatics Olympiad 2020 (Implied Classification to IOI 2020)</h6>
 								<p>Issued by the Spanish Informatics Olympiad</p> </li>
 							<li>
@@ -193,40 +181,76 @@
 				  <li class="timeline-item mb-5">
 				  <h5 class="fw-bold">Empathy.co, 2020</h5>
 				  <p class="text-muted mb-2 fw-bold">Data Engineering Intern</p>
-				  <p>
-					  Built an assistant for retailers to discover trends and understand their customers better by detecting anomalies in the distribution of missing search queries in their website over time. Scaled it to work with data from some of the largest brands in the sector.
-				  </p>
 				  </li>
 				  <li class="timeline-item mb-5">
 				  <h5 class="fw-bold">Merkle Spain (Divisadero), 2019</h5>
 				  <p class="text-muted mb-2 fw-bold">Data Scientist</p>
-				  <p>
-					  Modelled different clients' data to help them understand their customers' behaviours better, mainly spending my time on the predition of customer journeys through websites. Also had the chance to work more on the engineering side developing a pipeline for graph data using Spark, improving on the alternative in terms of speed by several orders of magnitude.
-				  </p>
 				  </li>
 				</ul>
 				<img src="img/olimpiada-ast.jpg" style="width: 65%;" class="center-block img-fluid">
 			</div>
 		</div>
 		<div class = "row">
-			<h3 style="padding-left: 10px;">OIFem</h3>
-			<p>During my time in high school, when I competed regularly in informatics olympiads, I noticed a very large gender gap, where girls usually made up under 5% of participants. This motivated me to co-found the Spanish Informatics Olympiad for Girls (<a href="https://oifem.es">OIFem</a>), a non-profit with the desire to help teenage girls in Spain find their path in computer science and discover opportunities in the tech world. Every year, OIFem trains students (offering classes from beginner-level programming courses to focused groups on international olympiads), selects the Spanish delegation for <a href="https://egoi.org/">EGOI</a> through a national competition it organises and creates a community of girls who enjoy programming through talks and other social events. All work in OIFem is done by volunteers, many of which are students from previous generations that, once they graduate from high school, join the organisation to give future students an even better experience than the one they lived.</p>
-			<p>I chaired this organisation from its creation in 2020 until the end of 2023. I am insanely proud of what we achieved and it exceeded all the expectations that I had when we started. We quite quickly went from barely seeing any girls competing in Spanish informatics olympiads to having hundreds of students and very strong support from sponsors and collaborators. I learned so much in this time, where I had the chance to lead a team of around 30 very passionate competitive programmers working together to give these students the best possible experience. I also did a lot of IC work, from teaching students from all levels to designing challenging problems for them and negotiating with stakeholders.</p>
-			<p>After nearly 4 years of running the organisation, I decided to stepped aside to let a team of students from our first editions take charge. In this time, leaderboards of programming competitions in Spain have gone from having the rare appearance of a girl to now almost always having several OIFem girls in them. There have been more medals earned by women in mixed competitions in Spain since the non-profit's creation (2020-2024) than in all previous olympiads (1997-2020) and three OIFem students were the first women's team to ever win HP Codewars Spain. Our students are also excelling in the international stages too, winning medals representing Spain in mixed competitions such as the West European Informatics Olympiad (WEOI) and in the Iberoamerican Informatics Olympiad (OII / CIIC). I now take up occasional technical tasks to help out the new OIFem team and to keep in touch with an organisation that means so much to me.</p>
+			<h3 style="padding-left: 10px;">Gemini Diffusion</h3>
+			<p>In contrast to autoregressive language models, which generate text by outputting one token at a time from left to right, text diffusion models iteratively refine a piece of text starting with noise until the final sample is produced. This opens up interesting possibilities like more natural editing or inpainting.</p>
+			<p>Gemini Diffusion was demoed at the Google I/O 2025 Keynote, shortly followed up with a very successful launch of a chat UI to interact with the model. I was a core contributor to this project, and I got to work on many aspects on the model, from diffusion research to infra work and post-training.</p>
+			<p>The model is on par with comparable autoregressive models on well-known <a href="https://deepmind.google/models/gemini-diffusion/#benchmarks">benchmarks</a>, while being 5 times faster.</p>
+			<video controls>
+				<source src="img/demo.mp4" type="video/mp4">
+			</video>
 		</div>
-		<div class="row d-flex align-items-center justify-content-center" style="padding-bottom: 50px;">
-			<div class="col-md-4">
-				<img class="center-block img-fluid" src="img/turquia-medallas.jpg" style="width: 80%">
+		<div class = "row" style="padding-top: 50px;">
+			<h3 style="padding-left: 10px;">OIFem</h3>
+			<p>
+				During my time in high school, when I competed regularly in informatics olympiads, I noticed a very large gender gap, where girls usually made up under 5% of participants. This motivated me to co-found the Spanish Informatics Olympiad for Girls (<a href="https://oifem.es">OIFem</a>), a non-profit with the desire to help teenage girls in Spain find their path in computer science, and discover opportunities in the tech world. I ran this organisation, where I managed 30+ people, for the first four years of its existence. After this time, I stepped to the side to let a team of former students take charge. Our main activity (everything, including trips, was free for students) consisted of:
+			</p>
+			<ul class="greylist">
+				<li>Data structures and algorithms classes: we taught weekly classes throughout the school year in small groups, sending practice problem sets for students to train between sessions. There were classes of all levels, from introductions to programming to coaching for national and international informatics olympiads.</li>
+				<li>Personalised attention: students would have one or more volunteers that they could contact outside of lessons to discuss problems they were stuck on, receive plans catered to them, and get coding advice.</li>
+				<li>Yearly contest: we organised a national competition for all the students once a year where, after some online selection phases, the finalists would come to compete in person for four spots in the Spanish delegation for the European Girls' Informatics Olympiad (EGOI).</li>
+				<li>Insight into the tech industry: our activities were sponsored by companies of the likes of Amazon and BBVA. This meant that students could regularly attend talks with their employees, and connect with them for future opportunities.</li>
+			</ul>
+			<div class="row d-flex align-items-center justify-content-center" style="padding-bottom: 20px; padding-top: 20px;">
+				<div class="col-md-4">
+					<img class="center-block img-fluid" src="img/turquia-medallas.jpg" style="width: 80%">
+				</div>
+				<div class="col-md-4">
+					<img class="center-block img-fluid" src="img/clase.png" style="width: 80%">
+				</div>
+				<div class="col-md-4">
+					<img class="center-block img-fluid" src="img/oifem3.jpg" style="width: 80%">
+				</div>
 			</div>
-			<div class="col-md-4">
-				<img class="center-block img-fluid" src="img/clase.png" style="width: 80%">
-			</div>
-			<div class="col-md-4">
-				<img class="center-block img-fluid" src="img/oifem3.jpg" style="width: 80%">
-			</div>
+			<p>
+				Despite how bad the situation was when we founded the non-profit, our students were very successful from the get-go. Some of their achievements include:
+			</p>
+			<ul class="greylist">
+				<li>The first victory of a women's team in HP Codewars Spain. The main programming competition for teams in Spain had never seen a single woman in its winning team, and our students won with an all-female team.</li>
+				<li>More medals from girls from 2020 onwards (year where organisation was set up) in the (mixed) Spanish Informatics Olympiad than in all years until then (1997-2020). The same holds if you just look at gold medals.</li>
+				<li>Medals every year representing Spain in prestigious mixed international competitions, like the Iberoamerican Informatics Olympiad (CIIC) and the Western European Olympiad in Informatics (WEOI).</li>
+				<li>Frequent admissions to top universities.</li>
+				<li>A spot representing Spain in IOI 2025 (yet to take place).</li>
+			</ul>
+			<p>During this period, the work we were doing in the non-profit got a lot of visibility. I especially liked <a href="https://elpais.com/tecnologia/2022-10-28/la-olimpiada-informatica-femenina-europea-receta-contra-la-brecha-de-genero.html">this article</a> in El País highlighting our students' record-breaking performance in Turkey, and being on the <a href="https://cincodias.elpais.com/cincodias/2021/09/24/fortunas/1632507035_412273.html">front cover of Cinco Días</a>, the main financial newspaper in Spain. Pedro Sánchez, President of Spain, also <a href="https://www.youtube.com/watch?v=oPCFRMrH9u4&t=1575s">recognised me</a> as an inspiration for the 2025 Digitalisation Plan.</p>
+		</div>
+		<div class = "row" style="padding-top: 50px;">
+			<h3 style="padding-left: 10px;">Designing problems for informatics olympiads</h3>
+			<p>I regularly participate in the preparation of problems for informatics olympiads, and really care about providing good learning opportunities for high school students. Some recent examples:</p>
+			<ul class="greylist">
+				<li>Even though I no longer run OIFem, I still frequently design problems for their competitions.</li>
+				<li>I have been a member of the Spanish Informatics Olympiad's Scientific Committee (the team in charge of preparing the contest) since 2020, being behind many of the problems since then.</li>
+				<li>I helped set up the first Western European Olympiad in Informatics as part of its Scientific Committee, designing and preparing one of the four problems, and taking care of testing the rest.</li>
+			</ul>
+		</div>
+		<div class = "row" style="padding-top: 50px;padding-bottom: 50px;">
+			<h3 style="padding-left: 10px;">High school</h3>
+			<p>When I was 11, I discovered platforms like edX and Coursera. This was a game-changer for me. I started spending all my time learning about different areas of maths and their applications, and that's how I discovered programming. Since I was already working on university-level subjects, teachers in high school mostly let me be on my laptop and do my own thing. Instead of graduating early, I preferred to use the time to focus without pressure on the stuff I found interesting, a decision I don't regret at all.</p>
+			<p>Some courses in data structures and algorithms introduced me to competitive programming. Having only a couple months' worth of practice, I signed up to the 2019 Asturian Informatics Olympiad and won, earning a spot in that year's Spanish Informatics Olympiad final. I ended up being the top-rated Python programmer that season, but my overall score was not high enough to make the International Olympiad in Informatics (IOI) team. I still had a full year of high school left, and I spent most of it training with this objective. I won a gold medal that time around in the Spanish Informatics Olympiad and made the IOI team. This also allowed me to represent Spain in the Iberoamerican Informatics Olympiad (CIIC), where I got a silver medal.</p>
+			<p>In this time, I got very interested in AI research. I would regularly replicate the papers that I read and enjoyed playing with datasets I found online. As soon as I was old enough to work, I sent out my CV to Merkle Spain, a consultancy that had presented their projects in the olympiad that I had attended. I won the datathon they organised that year and landed a job there as a data scientist. I spent my time mostly between two projects: an analysis of consumer trajectories on insurance websites to cater the experience to their profile, and an efficient data pipeline using PySpark for a large telecom. I found the latter especially interesting because I got to work with graph data, which had a nice overlap with competitive programming.</p>
+			<p>For my final Summer before university, I wanted to try something different, and I did a data engineering internship in Empathy.co, a company that works on the search engines behind the websites of some of the largest retailers. Despite my job title, I ended up single-handedly developing an agent that predicted search trends and, focusing on queries with no results, recommended actions for retailers to take.</p>
+			<p>I was determined to study Mathematics and Computer Science in Oxford, so I prepared six International A-Levels on top of my Spanish subjects: Mathematics, Further Mathematics, Physics, Computer Science, Economics and Spanish. I got 6 A*'s and full marks in 7 of the papers.</p>
 		</div>
 	</div>
-
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
